@@ -1,0 +1,47 @@
+.container {
+  display: block;
+  width: 18.4%;
+  float: left;
+  position: relative;
+  padding: 12px 15px;
+  margin: 10px 1%;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  h2 {
+    width: 100%;
+    font-size: 15px;
+    line-height: 100%;
+    font-family: Roboto-Regular, sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+  }
+  p {
+    color: #16bec3;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  span {
+    position: relative;
+    padding-right: 18px;
+    color: #16bec3;
+  }
+  span:first-of-type:after {
+    width: 4px;
+    height: 4px;
+    background: #16bec3;
+    border-radius: 6px;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    content: '';
+  }
+}

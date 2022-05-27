@@ -1,0 +1,50 @@
+.container {
+  min-height: 87px;
+  width: 25%;
+  float: left;
+  padding: 0 10px 0 94px;
+  min-height: 87px;
+  margin: 20px 0 17px;
+  position: relative;
+  transition: all 0.3s ease;
+  img {
+    display: block;
+    width: 84px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    h2 {
+      width: 100%;
+      margin: 0 0 20px;
+      font-size: 20px;
+      color: #333;
+      font-family: Roboto-Medium, sans-serif;
+      margin: 0;
+      cursor: pointer;
+    }
+    h2:hover {
+      color: #f79100;
+    }
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 22px;
+      color: #7c7c7c;
+      transition: all 0.3s;
+      text-transform: capitalize;
+      cursor: pointer;
+      font-family: Roboto-Light, sans-serif;
+    }
+    span:hover {
+      color: #16bec3;
+      text-decoration: underline;
+    }
+  }
+}
