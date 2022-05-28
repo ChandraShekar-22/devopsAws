@@ -1,0 +1,46 @@
+.container {
+  max-width: 300px;
+  box-shadow: -2px 2px 8px 0 rgba(0, 0, 0, 0.06);
+  padding: 15px;
+  h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+  }
+}
+
+.buttoncl {
+  font-size: 11px;
+  line-height: 14px;
+  color: #999;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.buttoncl span:first-child {
+  cursor: pointer;
+}
+
+.notification-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 10px;
+  section {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -2px;
+    color: #666;
+    padding-top: 9px;
+    p {
+      font-size: 10px;
+      padding: 5px 0 10px;
+      opacity: 0.59;
+      max-width: 299px;
+      color: #666;
+    }
+  }
+}

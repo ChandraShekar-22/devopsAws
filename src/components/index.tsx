@@ -3,3 +3,7 @@ export * from './browser-card/browser-card';
 export * from './location-box/location-box';
 export * from './featured-project-card/featured-project-card';
 export * from './added-properties-card/added-propertied-card';
+export * from './properties-card/properties-card';
+export * from './button/button';
+export * from './call-back-card/call-back-card';
+export * from './text-input/text-input';

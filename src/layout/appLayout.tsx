@@ -5,7 +5,7 @@ import styles from './appLayout.module.scss';
 
 export const AppLayout = () => {
   return (
-    <div>
+    <div className={styles['main-container']}>
       <Header />
       <div className={styles['container']}>
         <Outlet />

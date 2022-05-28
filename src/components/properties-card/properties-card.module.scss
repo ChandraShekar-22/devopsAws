@@ -1,0 +1,164 @@
+.title {
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+}
+.similar-project,
+.title {
+  position: relative;
+  overflow: hidden;
+}
+.similar-project:hover .imagesad > img {
+  transform: translateX(-50%) scale(1.04);
+  transition: all 0.4s ease-in;
+}
+
+.similar-project {
+  min-height: 203px;
+  margin: 0;
+  display: block;
+  cursor: pointer;
+
+  .imagesad {
+    width: 100%;
+    min-height: 270px;
+    max-height: 270px;
+    position: relative;
+    overflow: hidden;
+    img {
+      display: block;
+      width: auto;
+      min-width: 100%;
+      max-height: 100%;
+      min-height: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) scale(1);
+      -moz-transform: translateX(-50%) scale(1);
+      -o-transform: translateX(-50%) scale(1);
+      -webkit-transform: translateX(-50%) scale(1);
+      transition: all 0.4s ease-in;
+      cursor: pointer;
+    }
+  }
+  .bgload {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(90deg, #eee 8%, #ddd 18%, #eee 33%);
+    background-size: 300% 50%;
+    content: ' ';
+    display: block;
+    height: 100%;
+    position: relative;
+    visibility: visible;
+    width: 100%;
+  }
+  .ongoing {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 12px 12px 0;
+    padding: 5px 8px 4px;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+}
+
+.recentlypro {
+  padding: 10px 0;
+  position: relative;
+  color: #666;
+  min-height: 125px;
+  h3 {
+    width: 100%;
+    color: #333;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18px !important;
+    margin-bottom: 7px !important;
+    font-family: Roboto-Regular, sans-serif;
+    font-weight: 300;
+    min-height: 24px;
+  }
+  .subtext {
+    width: 100%;
+    display: block;
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .subTile {
+    font-size: 15px;
+    margin-top: 7px;
+    font-family: Roboto-Medium, sans-serif;
+    h3 {
+      width: 100%;
+      color: #333;
+      line-height: 24px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
+
+a {
+  color: #16bec3;
+  text-decoration: none;
+}
+
+.recentlypro .subTile,
+.recentlypro h3 {
+  width: 100%;
+  color: #333;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.recentlypro h3 {
+  font-size: 18px !important;
+  margin-bottom: 7px !important;
+  font-family: Roboto-Regular, sans-serif;
+  font-weight: 300;
+  min-height: 24px;
+}
+
+.bddls {
+  width: 100%;
+  padding: 10px 80px 10px 0;
+  background: #fff;
+  border-top: 1px dashed #ddd;
+  position: relative;
+  display: flex;
+  .builderDiv,
+  button {
+    align-self: center;
+  }
+
+  .builderDiv {
+    width: 100%;
+    color: #666;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    flex: 1;
+    small {
+      display: block;
+    }
+  }
+}
