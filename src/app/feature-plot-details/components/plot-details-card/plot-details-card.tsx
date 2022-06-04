@@ -25,7 +25,7 @@ export const PlotDetailsCard = ({ areaInSqFt, areaInSqm, possession, possessionT
           <li>
             <small>Possession</small>
             <span>
-              {possession} <i>({possessionTag})</i>
+              {possession} ({possessionTag})
             </span>
           </li>
           <li>
@@ -42,15 +42,10 @@ export const PlotDetailsCard = ({ areaInSqFt, areaInSqm, possession, possessionT
           </li>
         </ul>
         <div className={styles['clearfix']}></div>
-        {/* <div className={styles['colds']}>
+        <div className={styles['colds']}>
           <div className={styles['rara_info']}>RERA ID </div>
-          <span className={styles['rera_dls']}>
-            PRM/KA/RERA/1251/308/PR/2 ...
-            <span data-toggle='modal' data-target='#reraModal'>
-              Show More
-            </span>
-          </span>
-        </div> */}
+          <span className={styles['rera_dls']}>PRM/KA/RERA/1251/446/PR/210111/003772</span>
+        </div>
       </div>
     </div>
   );

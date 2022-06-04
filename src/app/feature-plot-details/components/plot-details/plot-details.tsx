@@ -5,6 +5,7 @@ import styles from './plot-details.module.scss';
 import { Grid } from '@mui/material';
 import { PlotAmenities } from '../plot-amenities/plot-amenities';
 import { PlotHeader } from '../plot-header/plot-header';
+import { PlotGalleryModal } from '../plot-gallery-modal/plot-gallery-modal';
 
 export const PlotDetails = () => {
   return (
@@ -12,7 +13,7 @@ export const PlotDetails = () => {
       <PlotHeader title={'Nambiar Ellegenza Phase I'} builderName={'Nambiar Builders Pvt. Ltd.'} place={'Anekal'} price={'1.65 Cr'} />
       <div className={styles['plot-image-container']}>
         <Grid container spacing={2}>
-          <Grid item xs={0} sm={5}>
+          <Grid item xs={12} sm={5}>
             <PlotGallery />
           </Grid>
           <Grid item xs={12} sm={7} className={styles['bgColor']}>
@@ -35,7 +36,6 @@ export const PlotDetails = () => {
             availablity: 'YES',
             buitUpAreaInSqft: '984 - 1252 sq.ft',
             buitUpAreaInSqm: '91.42 - 116.31 sq.m',
-            carpetArea: '',
             price: '70.11 L - 89.20 L',
           },
           {
@@ -43,12 +43,12 @@ export const PlotDetails = () => {
             availablity: 'YES',
             buitUpAreaInSqft: '984 - 1252 sq.ft',
             buitUpAreaInSqm: '91.42 - 116.31 sq.m',
-            carpetArea: '',
             price: '70.11 L - 89.20 L',
           },
         ]}
       />
       <PlotAmenities />
+      <PlotGalleryModal />
     </div>
   );
 };

@@ -6,7 +6,8 @@ export interface ConfigurationProps {
   availablity: string;
   buitUpAreaInSqft: string;
   buitUpAreaInSqm: string;
-  carpetArea: string;
+  carpetAreaInSqft?: string;
+  carpetAreaInSqm?: string;
   price: string;
 }
 
@@ -34,11 +35,12 @@ export const UnitConfiguration: React.FC<UnitConfigurationProps> = ({ configuara
                 </small>
               </div>
               <div className={styles['col']}>
-                {configure.buitUpAreaInSqft}
-                <small className={styles['smtext']}> ({configure.buitUpAreaInSqm})</small>
+                {configure.buitUpAreaInSqft || 'NA'}
+                {configure.buitUpAreaInSqm && <small className={styles['smtext']}> ({configure.buitUpAreaInSqm})</small>}
               </div>
               <div className={styles['col']}>
-                {configure.carpetArea || 'NA'} <small className={styles['smtext']}> </small>
+                {configure.carpetAreaInSqft || 'NA'}
+                {configure.carpetAreaInSqm && <small className={styles['smtext']}> ({configure.carpetAreaInSqm}) </small>}
               </div>
               <div className={styles['col']}>{configure.price} </div>
               <div className={styles['col']}>

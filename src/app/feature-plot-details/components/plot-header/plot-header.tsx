@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Grid } from '@mui/material';
 import styles from './plot-header.module.scss';
 import React from 'react';
@@ -18,9 +19,9 @@ export const PlotHeader: React.FC<PlotHeaderProps> = ({ title, builderName, plac
             <span>{title}</span>
             <p>
               By:
-              <a href='/nambiar-builders-pvt-ltd/builder/bmrq5g'>{builderName}</a>
+              <a href='#'> {builderName} </a>
               in
-              <a href='/anekal-bangalore/lvp-7ry8t1'>{place}</a>
+              <a href='#'> {place}</a>
             </p>
           </h1>
         </Grid>

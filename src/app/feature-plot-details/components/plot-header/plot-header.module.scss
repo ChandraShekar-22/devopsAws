@@ -56,3 +56,11 @@
   font-family: Roboto-Regular;
   font-weight: 300;
 }
+
+@media screen and (max-width: 991px) {
+  ._pro_title h2 {
+    text-align: left;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+}
