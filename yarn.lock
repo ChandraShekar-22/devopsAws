@@ -1566,6 +1566,13 @@
     prop-types "^15.8.1"
     react-is "^17.0.2"
 
+"@mui/icons-material@^5.8.2":
+  version "5.8.2"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.8.2.tgz#211ac2a041ece952749d39c3c26071226993be14"
+  integrity sha512-fP6KUCCZZjc2rdbMSmkNmBHDskLkmP0uCox57cbVXvomU6BOPrCxnr5YXsSsQrZB8fchx7hfH0bkAgvMZ5KM0Q==
+  dependencies:
+    "@babel/runtime" "^7.17.2"
+
 "@mui/material@^5.8.0":
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.8.0.tgz#7451cecde57a24a9c407ec5122369240f5e7fae3"
@@ -7058,6 +7065,11 @@ nth-check@^2.0.1:
   integrity sha512-it1vE95zF6dTT9lBsYbxvqh0Soy4SPowchj0UBGj/V6cTPnXXtQOPUbhZ6CmGzAD/rW22LQK6E96pcdJXk4A4w==
   dependencies:
     boolbase "^1.0.0"
+
+nuka-carousel@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/nuka-carousel/-/nuka-carousel-5.1.0.tgz#84bce88a848cb1ef3d6aa5d6a336333522885b6a"
+  integrity sha512-+98saMI5C4oZ5j5VTxGGdDulywSIJQoFnPwsJRXW11nOsCyenS5GyKXvm9fP+W6Vtkx6Ywmwc6WrubppoIJlAA==
 
 nwsapi@^2.2.0:
   version "2.2.0"
