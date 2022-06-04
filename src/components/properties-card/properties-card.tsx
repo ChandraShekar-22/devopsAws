@@ -1,8 +1,9 @@
 import { Button } from 'components';
 import styles from './properties-card.module.scss';
+import noImage from 'libs/shared/assets/no-image.webp';
 
 export interface PropertiesCardProps {
-  imageSrc: string;
+  imageSrc?: string;
   title: string;
   plotName: string;
   plotPlace: string;
@@ -28,7 +29,7 @@ export const PropertiesCard = ({
     <div className={styles['title']}>
       <a className={styles['similar-project']} href={navigateTo} target='_blank' rel='noreferrer'>
         <div className={`${styles['imagesad']} ${styles['bgload']}`}>
-          <img alt={title} className='cf-lazyload' src={imageSrc} />
+          <img alt={title} className='cf-lazyload' src={imageSrc || noImage} />
           {!!tagName && <span className={styles['ongoing']}>{tagName}</span>}
         </div>
         <div className={styles['recentlypro']}>

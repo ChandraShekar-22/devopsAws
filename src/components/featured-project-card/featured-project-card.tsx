@@ -1,7 +1,8 @@
 import styles from './featured-project-card.module.scss';
+import noImage from 'libs/shared/assets/no-image.webp';
 
 interface FeaturedProjectCardProps {
-  imageSrc: string;
+  imageSrc?: string;
   price: string;
   title: string;
   address: string;
@@ -13,7 +14,7 @@ export const FeaturedProjectCard = ({ imageSrc, price, title, address, flats, de
   return (
     <div className={styles['container']}>
       <div className={styles['image-content']}>
-        <img src={imageSrc} alt={title} />
+        <img src={imageSrc || noImage} alt={title} />
       </div>
       <div className={styles['content']}>
         <div className={styles['price']}>{price}</div>

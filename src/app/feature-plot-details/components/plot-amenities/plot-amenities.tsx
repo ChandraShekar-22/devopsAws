@@ -3,15 +3,11 @@ import styles from './plot-amenities.module.scss';
 
 export const PlotAmenities = () => {
   return (
-    <>
+    <div className={styles['container']}>
       <div className={`${styles['bgclolr']} ${styles['amenitiesb']} ${styles['mmrbtnone']}`}>
-        <Grid container>
-          <Grid item xs={12}>
-            <h2 className={styles['section-header']}>Amenities - Nambiar Ellegenza Phase I </h2>
-          </Grid>
-        </Grid>
-        <Grid container>
-          <Grid item xs={12}>
+        <h2 className={styles['section-header']}>Amenities - Nambiar Ellegenza Phase I </h2>
+        <Grid container spacing={2}>
+          <Grid item>
             <div className={styles['contenttext']}>
               <div className={styles['amtlist']}>
                 <ul>
@@ -70,6 +66,6 @@ export const PlotAmenities = () => {
           </Grid>
         </Grid>
       </div>
-    </>
+    </div>
   );
 };
