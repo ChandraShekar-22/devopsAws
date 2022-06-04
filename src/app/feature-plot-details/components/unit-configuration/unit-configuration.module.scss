@@ -10,6 +10,9 @@
   background: #f7f9fa;
   min-height: 54px;
 }
+.unitdetails {
+  margin-bottom: 50px;
+}
 
 .unitdetails .header > div.col {
   width: 16%;
@@ -38,8 +41,8 @@
   font-size: 12px;
 }
 .body {
-  float: left;
   width: 100%;
+  display: flex;
   border-bottom: 1px dashed #eee;
 }
 
@@ -48,7 +51,6 @@
   line-height: 14px;
   font-size: 14px;
   color: #666;
-  max-height: 54px;
   overflow: hidden;
   min-height: 54px;
   width: 16%;
@@ -98,4 +100,24 @@
     overflow-x: auto;
     overflow-y: hidden;
   }
+}
+.avlabel {
+  font-size: 11px;
+  float: left;
+  width: 100%;
+  width: 100%;
+  line-height: 100%;
+  color: #999;
+  padding: 10px 0;
+  font-style: italic;
+  border-top: 1px dashed #fff;
+  position: relative;
+  top: -1px;
+}
+.section-header {
+  width: 100%;
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #333;
+  font-family: Roboto-Medium, sans-serif;
 }
