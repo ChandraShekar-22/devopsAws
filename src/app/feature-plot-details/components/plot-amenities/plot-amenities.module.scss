@@ -93,24 +93,20 @@ h2.section-header {
 
 @media screen and (max-width: 767px) {
   .amtlist ul li {
-    margin: 0 10px 0 0;
+    // margin: 0 10px 0 0;
     font-size: 12px;
     width: 100%;
-  }
-  .container .bgclolr .contenttext {
-    padding: 0 0 10px;
-  }
-  .amtlist {
-    padding: 0 0 12px 10px;
   }
   .amtlist ul li:first-child {
     font-size: 12px;
     width: 153px;
   }
   h2.section-header {
+    max-width: calc(100vw - 30px);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    word-wrap: break-word;
   }
 }
 @media screen and (max-width: 991px) {
