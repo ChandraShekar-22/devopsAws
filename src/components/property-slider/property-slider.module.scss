@@ -1,0 +1,20 @@
+
+.prevButton{
+  left: -50px !important;
+  color: #FFF;
+}
+.sliderBorder{
+  border: 10px solid #FFF
+}
+.sliderContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  background-color: #2b3937;
+  color: #FFF;
+}
+.sliderContent{
+  width: 30vw;
+  
+}
