@@ -1,0 +1,66 @@
+._pro_title {
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+  padding: 0 0 12px;
+
+  h1 {
+    font-weight: 300;
+    font-family: Roboto-Regular;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+._pro_title h1 > span {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+._pro_title h1 > p > a {
+  color: #16bec3;
+  text-decoration: none;
+  cursor: pointer;
+}
+._pro_title h1 > p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+  margin: 3px 0 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+._pro_title h2 {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 300;
+  font-family: Roboto-Medium;
+  text-align: right;
+  color: #fb676c;
+  margin: 13px 0 0;
+  padding: 0;
+}
+._pro_title h2 > small {
+  font-size: 17px;
+  color: #fb676c;
+  font-family: Roboto-Regular;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 991px) {
+  ._pro_title h2 {
+    text-align: left;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+}

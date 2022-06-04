@@ -1,0 +1,124 @@
+h2.section-header {
+  width: 100%;
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #333;
+  font-family: Roboto-Medium, sans-serif;
+}
+
+.container .bgclolr {
+  background: #fff;
+  padding: 0;
+  margin-bottom: 50px;
+  position: relative;
+}
+.container .bgclolr .contenttext ul {
+  position: relative;
+}
+.amtlist ul li span.title {
+  letter-spacing: 0.5px;
+  display: block;
+  padding: 0;
+}
+
+.contenttext {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+.amtlist {
+  width: 100%;
+  padding: 0 0 12px;
+  margin: 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.amtlist ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  clear: both;
+}
+
+.contenttext ul {
+  position: relative;
+  padding-left: 197px;
+}
+.amtlist ul li > i {
+  color: #333;
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+  top: 9px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.amtlist ul li:first-child {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  color: #333;
+  font-family: Roboto-Regular;
+  width: 200px;
+  padding-left: 0;
+}
+
+.container .bgclolr .amenitiesb .contenttext ul li:first-child {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  color: #333;
+  font-family: Roboto-Regular;
+  width: 200px;
+  padding-left: 0;
+}
+
+.amtlist ul li {
+  list-style: none;
+  display: inline-block;
+  color: #666;
+  font-size: 14px;
+  padding: 12px 0 0 31px;
+  position: relative;
+  width: 32.888%;
+  margin: 0;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 767px) {
+  .amtlist ul li {
+    margin: 0 10px 0 0;
+    font-size: 12px;
+    width: 100%;
+  }
+  .container .bgclolr .contenttext {
+    padding: 0 0 10px;
+  }
+  .amtlist {
+    padding: 0 0 12px 10px;
+  }
+  .amtlist ul li:first-child {
+    font-size: 12px;
+    width: 153px;
+  }
+  h2.section-header {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 991px) {
+  h2.section-header {
+    line-height: 20px;
+    background: #eee;
+    width: 100%;
+    padding: 20px 10px 10px;
+    margin-bottom: 0 !important;
+  }
+}
