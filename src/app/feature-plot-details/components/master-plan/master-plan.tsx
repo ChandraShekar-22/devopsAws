@@ -1,10 +1,11 @@
 import styles from './master-plan.module.scss';
+import { Header } from '../header/header';
 
 export const MasterPlan = () => {
   return (
     <div id={styles['master-plan']}>
       <div className={`${styles['master-plan-outer']} ${styles['bgclolr']}`}>
-        <h2 className={styles['section-header']}>Master Plan</h2>
+        <Header title='Master Plan' />
         <div className={styles['master-plan-wrp']}>
           <div className={styles['master-plan-section']}>
             <div

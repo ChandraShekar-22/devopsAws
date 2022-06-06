@@ -1,0 +1,26 @@
+@media screen and (max-width: 767px) {
+  h2.section-header {
+    max-width: calc(100vw - 30px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+  }
+}
+@media screen and (max-width: 991px) {
+  h2.section-header {
+    line-height: 20px;
+    background: #eee;
+    width: 100%;
+    padding: 20px 10px 10px;
+    margin-bottom: 0 !important;
+  }
+}
+
+h2.section-header {
+  width: 100%;
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #333;
+  font-family: Roboto-Medium, sans-serif;
+}

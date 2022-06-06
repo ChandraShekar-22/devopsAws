@@ -1,11 +1,12 @@
 import { Grid } from '@mui/material';
+import { Header } from '../header/header';
 import styles from './plot-amenities.module.scss';
 
 export const PlotAmenities = () => {
   return (
     <div className={styles['container']}>
       <div className={`${styles['bgclolr']} ${styles['amenitiesb']} ${styles['mmrbtnone']}`}>
-        <h2 className={styles['section-header']}>Amenities - Nambiar Ellegenza Phase I </h2>
+        <Header title={'Amenities - Nambiar Ellegenza Phase I'} />
         <Grid container spacing={2}>
           <Grid item>
             <div className={styles['contenttext']}>
