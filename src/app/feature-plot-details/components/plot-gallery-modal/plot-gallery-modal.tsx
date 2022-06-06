@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 import { Modal, Button } from 'components';
 import styles from './plot-gallery-modal.module.scss';
 
-export const PlotGalleryModal = () => {
+export interface PlotGalleryModalProps {
+  openModal: boolean;
+  closeModal: () => void;
+}
+
+export const PlotGalleryModal = ({ openModal, closeModal }: PlotGalleryModalProps) => {
   const tabList = ['Gallery', 'Master Plans', 'Floor Plans', 'Route Maps'];
   const [activeTab, setActiveTab] = useState('Gallery');
   const modalRef = React.useRef<any | HTMLDivElement>(null);
@@ -27,9 +32,9 @@ export const PlotGalleryModal = () => {
     }
   };
   return (
-    <Modal open={false} maxWidth={'xl'}>
+    <Modal open={openModal} maxWidth={'xl'}>
       <div className={styles['modal-body']} ref={modalRef}>
-        <button type='button' className={styles['closegallery']}>
+        <button type='button' className={styles['closegallery']} onClick={closeModal}>
           <span aria-hidden='true'>×</span>
         </button>
         <section>
