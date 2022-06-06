@@ -1,11 +1,15 @@
 import styles from './plot-gallery.module.scss';
 
-export const PlotGallery = () => {
+export interface PlotGalleryProps {
+  openModal: () => void;
+}
+
+export const PlotGallery = ({ openModal }: PlotGalleryProps) => {
   return (
     <div className={styles['container']}>
       <div className={styles['section-header']}>Gallery</div>
       <div className={`${styles['pro-pnv-img']} ${styles['photo-count_3']} ${styles['clearfix']}`}>
-        <div className={`${styles['pnv-img-wraper']} ${styles['img-responsive']} ${styles['bgload']}`}>
+        <div className={`${styles['pnv-img-wraper']} ${styles['img-responsive']} ${styles['bgload']}`} onClick={openModal}>
           <img
             title='nambiar-ellegenza-phase-i-bangalore'
             alt='nambiar-ellegenza-phase-i-bangalore'

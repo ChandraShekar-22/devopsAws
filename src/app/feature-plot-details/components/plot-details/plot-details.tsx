@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { PlotDetailsCard } from '../plot-details-card/plot-details-card';
 import { PlotGallery } from '../plot-gallery/plot-gallery';
 import { UnitConfiguration } from '../unit-configuration/unit-configuration';
@@ -10,14 +11,19 @@ import { Button, CallBackCard } from 'components';
 import { MasterPlan } from '../master-plan/master-plan';
 
 export const PlotDetails = () => {
+  const [openModal, setOpenModel] = useState(false);
   return (
-    <Grid container spacing={2} style={{ paddingTop: '20px' }}>
-      <Grid item sm={12} md={8}>
+    <Grid container spacing={2} style={{ paddingTop: '20px' }} justifyContent='center' alignContent='center'>
+      <Grid item md={9}>
         <PlotHeader title={'Nambiar Ellegenza Phase I'} builderName={'Nambiar Builders Pvt. Ltd.'} place={'Anekal'} price={'1.65 Cr'} />
         <div className={styles['plot-image-container']}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={5}>
-              <PlotGallery />
+              <PlotGallery
+                openModal={() => {
+                  setOpenModel(true);
+                }}
+              />
             </Grid>
             <Grid item xs={12} sm={7} className={styles['bgColor']}>
               <PlotDetailsCard
@@ -57,20 +63,29 @@ export const PlotDetails = () => {
             },
           ]}
         />
-        <MasterPlan />
+        <MasterPlan
+          openModal={() => {
+            setOpenModel(true);
+          }}
+        />
         <PlotAmenities />
-        <PlotGalleryModal />
+        <PlotGalleryModal
+          openModal={openModal}
+          closeModal={() => {
+            setOpenModel(false);
+          }}
+        />
       </Grid>
-      <Grid item>
-        <div style={{ position: 'sticky', top: '0px' }}>
+      <Grid item className={styles['request-container']}>
+        <section>
           <CallBackCard />
-        </div>
-        <div style={{ position: 'fixed', bottom: 0, width: '100%', left: 0 }}>
-          <Button onClick={() => {}} fullWidth buttonType='primary'>
-            Contact Us
-          </Button>
-        </div>
+        </section>
       </Grid>
+      <section className={styles['request-button']}>
+        <Button onClick={() => {}} fullWidth buttonType='primary'>
+          Contact Us
+        </Button>
+      </section>
     </Grid>
   );
 };
