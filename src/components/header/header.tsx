@@ -5,8 +5,13 @@ export const Header = () => {
     <header className={styles["container"]}>
       <div className={styles["container-fluid"]}>
         <div className={styles["logo-container"]}>
-          <span className="material-icons">menu</span>
           <img src={logo} alt="logo" />
+          <div className={styles["cities"]}>
+            <a href="javascript:void(0)">Bangalore</a>{" "}
+            <a href="javascript:void(0)">Pune</a>{" "}
+            <a href="javascript:void(0)">Chennai</a>
+          </div>
+          <div className={styles["contact"]}>+91 7795058180</div>
         </div>
       </div>
     </header>

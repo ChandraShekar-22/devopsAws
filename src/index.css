@@ -14,3 +14,11 @@ code {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.slider-control-centerleft{
+  left: -50px !important;
+  cursor: pointer;
+}
+.slider-control-centerright{
+  right: -50px !important;
+  cursor: pointer;
+}

@@ -45,6 +45,26 @@ const items = [
 
   return (
     <div style={{ marginTop: "20px" }}>
+      <Grid
+        container
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 2, sm: 12, md: 12 }}
+      >
+        {Array.from(Array(4)).map((_, index) => (
+          <Grid item xs={6} sm={4} md={3} key={index}>
+            <BrowserCard
+              priceList={[
+                "Below ₹60 lakhs",
+                "₹60 lakhs - ₹80 lakhs",
+                "₹80 lakhs - ₹90 lakhs",
+              ]}
+              title="Buy - Apartments"
+              imageSrc="https://teja8.kuikr.com/cfassets/images/buy-villas.jpg"
+            />
+          </Grid>
+        ))}
+      </Grid>
+
       <PropertySlider items={items} />
       <Grid
         container
@@ -66,17 +86,25 @@ const items = [
       </Grid>
 
       <FeaturedProjectCard
-        price='₹81.90 Lakhs To 1.17 Crore'
-        title='Kolte Patil I TOWERS Exente'
-        address='in Electronic City Phase I, Bangalore'
-        flats='2, 2.5, 3 &amp; 4 BHK Apartment'
-        developerName='Kolte Patil Developers Ltd'
+        price="₹81.90 Lakhs To 1.17 Crore"
+        title="Kolte Patil I TOWERS Exente"
+        address="in Electronic City Phase I, Bangalore"
+        flats="2, 2.5, 3 &amp; 4 BHK Apartment"
+        developerName="Kolte Patil Developers Ltd"
       />
-      <LocationBox title='Whitefield' saleTag='2400+ for Sale' rentTag='200+ for Rent' />
+      <LocationBox
+        title="Whitefield"
+        saleTag="2400+ for Sale"
+        rentTag="200+ for Rent"
+      />
       <BrowserCard
-        priceList={['Below ₹60 lakhs', '₹60 lakhs - ₹80 lakhs', '₹80 lakhs - ₹90 lakhs']}
-        title='Buy - Apartments'
-        imageSrc='https://teja8.kuikr.com/cfassets/images/buy-villas.jpg'
+        priceList={[
+          "Below ₹60 lakhs",
+          "₹60 lakhs - ₹80 lakhs",
+          "₹80 lakhs - ₹90 lakhs",
+        ]}
+        title="Buy - Apartments"
+        imageSrc="https://teja8.kuikr.com/cfassets/images/buy-villas.jpg"
       />
       <CallBackCard />
 

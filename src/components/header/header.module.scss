@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  background: #00977e;
+  background: #ffffff;
   min-height: 66px;
   max-height: 66px;
   z-index: 111;
@@ -15,15 +15,20 @@
   padding-left: 15px;
   padding-right: 15px;
   height: 66px;
+  
 }
 
 .logo-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  justify-content: space-between;
+  .contact{
+    font-size: 22px;
+    color: #00977e;
+  }
   img {
-    width: 100px;
+    width: 94px;
     display: block;
     margin-left: 10px;
     padding: 0;
@@ -32,5 +37,14 @@
     width: 43px;
     color: #ffffff;
     font-size: 43px;
+  }
+}
+.cities{
+  a{
+    margin: 0 10px;
+    background-color: #00977e;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 5px 10px;
   }
 }
