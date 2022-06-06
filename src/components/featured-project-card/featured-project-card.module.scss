@@ -5,7 +5,7 @@
   cursor: pointer;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  width: 358px;
+  max-width: 358px;
 }
 .container:hover {
   border: 1px solid #ddd;
@@ -73,5 +73,11 @@
     font-size: 12px;
     color: #999;
     padding-top: 12px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .container {
+    max-width: 100%;
   }
 }
