@@ -68,11 +68,6 @@ export const CallBackCard = () => {
           )}
         </div>
       </div>
-      <div style={{ position: 'fixed', bottom: 0, width: '100%', left: 0 }}>
-        <Button onClick={() => {}} fullWidth buttonType='primary'>
-          Contact Us
-        </Button>
-      </div>
     </>
   );
 };
