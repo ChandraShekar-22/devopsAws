@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './unit-configuration.module.scss';
+import { Header } from '../header/header';
 
 export interface ConfigurationProps {
   unitType: string;
@@ -17,7 +18,7 @@ export interface UnitConfigurationProps {
 export const UnitConfiguration: React.FC<UnitConfigurationProps> = ({ configuarations }) => {
   return (
     <>
-      <h2 className={styles['section-header']}>Unit Configuration</h2>
+      <Header title='Unit Configuration' />
       <div className={styles['prounitdls']}>
         <div className={styles['unitdetails']}>
           <div className={styles['header']}>
