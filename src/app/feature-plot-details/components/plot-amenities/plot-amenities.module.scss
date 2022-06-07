@@ -1,13 +1,4 @@
-h2.section-header {
-  width: 100%;
-  margin: 0 0 20px;
-  font-size: 20px;
-  color: #333;
-  font-family: Roboto-Medium, sans-serif;
-}
-
 .container .bgclolr {
-  background: #fff;
   padding: 0;
   margin-bottom: 50px;
   position: relative;
@@ -61,19 +52,9 @@ h2.section-header {
   left: 0;
   font-size: 14px;
   color: #333;
-  font-family: Roboto-Regular;
   width: 200px;
   padding-left: 0;
-}
-
-.container .bgclolr .amenitiesb .contenttext ul li:first-child {
-  position: absolute;
-  left: 0;
-  font-size: 14px;
-  color: #333;
-  font-family: Roboto-Regular;
-  width: 200px;
-  padding-left: 0;
+  font-weight: 600;
 }
 
 .amtlist ul li {
@@ -100,21 +81,5 @@ h2.section-header {
   .amtlist ul li:first-child {
     font-size: 12px;
     width: 153px;
-  }
-  h2.section-header {
-    max-width: calc(100vw - 30px);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: break-word;
-  }
-}
-@media screen and (max-width: 991px) {
-  h2.section-header {
-    line-height: 20px;
-    background: #eee;
-    width: 100%;
-    padding: 20px 10px 10px;
-    margin-bottom: 0 !important;
   }
 }

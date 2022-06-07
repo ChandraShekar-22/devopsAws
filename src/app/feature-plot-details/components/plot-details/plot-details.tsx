@@ -6,7 +6,7 @@ import { Grid } from '@mui/material';
 import { PlotAmenities } from '../plot-amenities/plot-amenities';
 import { PlotHeader } from '../plot-header/plot-header';
 import { PlotGalleryModal } from '../plot-gallery-modal/plot-gallery-modal';
-import { CallBackCard } from 'components';
+import { Button, CallBackCard } from 'components';
 import { MasterPlan } from '../master-plan/master-plan';
 
 export const PlotDetails = () => {
@@ -64,6 +64,11 @@ export const PlotDetails = () => {
       <Grid item>
         <div style={{ position: 'sticky', top: '0px' }}>
           <CallBackCard />
+        </div>
+        <div style={{ position: 'fixed', bottom: 0, width: '100%', left: 0 }}>
+          <Button onClick={() => {}} fullWidth buttonType='primary'>
+            Contact Us
+          </Button>
         </div>
       </Grid>
     </Grid>
