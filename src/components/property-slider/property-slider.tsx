@@ -12,128 +12,125 @@ import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import { Grid } from "@mui/material";
-import logo from "libs/shared/assets/my_new_logo.jpg";
+import { Button } from "components/button/button";
 
 // import { ArrowCircleLeftIcon, ArrowCircleRightIcon } from "@mui/icons-material";
 
 interface DefaultControlsConfig {
-  containerClassName?: string;
-  nextButtonClassName?: string;
-  nextButtonStyle?: CSSProperties;
-  nextButtonText?: string;
-  pagingDotsClassName?: string;
-  pagingDotsContainerClassName?: string;
-  pagingDotsStyle?: CSSProperties;
-  prevButtonClassName?: string;
-  prevButtonStyle?: CSSProperties;
-  prevButtonText?: string;
+    containerClassName?: string;
+    nextButtonClassName?: string;
+    nextButtonStyle?: CSSProperties;
+    nextButtonText?: string;
+    pagingDotsClassName?: string;
+    pagingDotsContainerClassName?: string;
+    pagingDotsStyle?: CSSProperties;
+    prevButtonClassName?: string;
+    prevButtonStyle?: CSSProperties;
+    prevButtonText?: string;
 }
 
 
 
 type Property = {
-  id?: string;
-  name: string;
-  description: string;
-  usp?: string;
-  builder?: string;
-  location?: string;
-  startPrice?: string;
+    id?: string;
+    name: string;
+    description: string;
+    usp?: string;
+    builder?: string;
+    location?: string;
+    startPrice?: string;
 };
 
 
 interface PropertySliderProps {
-  items: Property[];
-  priceList?: string[];
-  imageSrc?: string;
+    items: Property[];
+    priceList?: string[];
+    imageSrc?: string;
 }
 
 export const PropertySlider = ({
-  items,
-  priceList,
-  imageSrc,
+    items,
+    priceList,
+    imageSrc,
 }: PropertySliderProps) => {
-const theme = useTheme();
-  return (
-    <Carousel
-      renderCenterLeftControls={({ previousSlide }) => (
-        <ArrowLeftIcon onClick={previousSlide} sx={{ fontSize: 80 }} />
-      )}
-      renderCenterRightControls={({ nextSlide }) => (
-        <ArrowRightIcon onClick={nextSlide} sx={{ fontSize: 80 }} />
-      )}
-      style={{ height: 400 }}
-      className={styles["sliderBorder"]}
-      defaultControlsConfig={{
-        prevButtonClassName:styles["prevButton"],
-      }}
-    >
-      {items.map((item, i) => (
-        <div className={styles["sliderContainer"]}>
-          <div className={styles["sliderContent"]}>
-            <Typography component="div" variant="h5">
-              Live From Space
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              Mac Miller
-            </Typography>
+    const theme = useTheme();
+    return (
+      <Carousel
+        renderCenterLeftControls={({ previousSlide }) => (
+          <ArrowLeftIcon
+            onClick={previousSlide}
+            sx={{ fontSize: 80, color: "#00977e" }}
+          />
+        )}
+        renderCenterRightControls={({ nextSlide }) => (
+          <ArrowRightIcon
+            onClick={nextSlide}
+            sx={{ fontSize: 80, color: "#00977e" }}
+          />
+        )}
+        style={{ height: 350, marginBottom: 30 }}
+        className={styles["sliderBorder"]}
+        defaultControlsConfig={{
+          prevButtonClassName: styles["prevButton"],
+        }}
+      >
+        {items.map((item, i) => (
+          <div className={styles["item"]}>
+            <div className={styles["carousel-caption"]}>
+              <div className={styles["offerbox"]}>
+                <div className={styles["offertext"]}>
+                  Brigade Northridge Neo, is a sprawling luxury enclave of
+                  magnificent Apartment
+                </div>
+              </div>
+              <div>Brigade Northridge Neo </div>
+              <p>
+                <span>by Brigade Group</span> <span>at Kogilu Main Road</span>
+              </p>
+              <div className={styles["ellipsis"]}>@ 93 L onwards</div>
+              <div className={styles["ellipsis"]}>Call: +91 99163 58180</div>
+              <a className={styles["btn"]} href="javascript:void(0);">
+                Explore Now
+              </a>
+            </div>
+            <div className={styles["itemimage"]}>
+              <img
+                alt="Brigade Northridge Neo"
+                src="https://teja10.kuikr.com/restatic/1648719961.jpg"
+              />
+              <div className={styles["rerainfo"]}>
+                <span>RERA ID:</span> PRM/KA/RERA/1251/309/PR/210824/004288
+              </div>
+            </div>
           </div>
-          <div>
-            <img src={logo} alt="logo" />
-          </div>
-        </div>
+          // <div className={styles["item"]} key={i}>
+          //   <div className={styles["imgContainer"]}>
+          //     <img
+          //       src={"https://teja10.kuikr.com/restatic/1648719961.jpg"}
+          //       alt="Brigade Northridge Neo offers"
+          //       className={styles["sliderImage"]}
+          //     />
+          //   </div>
+          //   <div className={styles["sliderContent"]}>
+          //     <hr></hr>
+          //     <div className={styles["usp"]}>
+          //       Brigade Northridge Neo, is a sprawling luxury enclave of
+          //       magnificent Apartment
+          //     </div>
 
-        // <Grid
-        //   container
-        //   spacing={{ xs: 2, md: 3 }}
-        //   columns={{ xs: 2, sm: 12, md: 12 }}
-        // >
-        //   <Grid
-        //     item
-        //     xs={12}
-        //     sm={12}
-        //     md={4}
-        //     className={styles["sliderDetailsContainer"]}
-        //   >
-
-        //   </Grid>
-        //   <Grid item xs={12} sm={12} md={8}>
-        //     <img src={logo} alt="logo" />
-        //   </Grid>
-        // </Grid>
-
-        // <Card sx={{ display: "flex" }} elevation={0}>
-        //   <Box
-        //     sx={{ display: "flex", flexDirection: "column", height: "200px" }}
-        //   >
-        //     <CardContent
-        //       sx={{ flex: "1 0 auto" }}
-        //       style={{ backgroundColor: "#aaa" }}
-        //     >
-        //       <Typography component="div" variant="h5">
-        //         Live From Space
-        //       </Typography>
-        //       <Typography
-        //         variant="subtitle1"
-        //         color="text.secondary"
-        //         component="div"
-        //       >
-        //         Mac Miller
-        //       </Typography>
-        //     </CardContent>
-        //   </Box>
-        //   <CardMedia
-        //     component="img"
-        //     sx={{ width: 151 }}
-        //     image="/static/images/cards/live-from-space.jpg"
-        //     alt="Live from space album cover"
-        //   />
-        // </Card>
-      ))}
-    </Carousel>
-  );
+          //     <hr></hr>
+          //     <div className={styles["project"]}>Brigade Northridge Neo</div>
+          //     <div className={styles["builder"]}>
+          //       By: Brigade Group in Kogilu Main Road
+          //     </div>
+          //     <div className={styles["startPrice"]}>@ 1.25 Cr onwards</div>
+          //     <div className={styles["agentPhone"]}>+91 9916358180</div>
+          //     <div className={styles["btn"]}>
+          //       <Button>Request Now</Button>
+          //     </div>
+          //   </div>
+          // </div>
+        ))}
+      </Carousel>
+    );
 };

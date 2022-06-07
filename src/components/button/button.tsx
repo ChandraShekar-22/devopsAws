@@ -1,7 +1,7 @@
 import styles from './button.module.scss';
 
 export interface ButtonProps {
-  onClick: () => void;
+  onClick?: () => void;
   children?: React.ReactNode;
   className?: string;
   buttonType?: 'outlined' | 'primary' | 'secondary';
