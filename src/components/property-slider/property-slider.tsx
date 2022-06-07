@@ -59,13 +59,13 @@ export const PropertySlider = ({
         renderCenterLeftControls={({ previousSlide }) => (
           <ArrowLeftIcon
             onClick={previousSlide}
-            sx={{ fontSize: 80, color: "#ffffff" }}
+            sx={{ fontSize: 80, color: "#00977e" }}
           />
         )}
         renderCenterRightControls={({ nextSlide }) => (
           <ArrowRightIcon
             onClick={nextSlide}
-            sx={{ fontSize: 80, color: "#ffffff" }}
+            sx={{ fontSize: 80, color: "#00977e" }}
           />
         )}
         style={{ height: 350, marginBottom: 30 }}
@@ -88,6 +88,7 @@ export const PropertySlider = ({
                 <span>by Brigade Group</span> <span>at Kogilu Main Road</span>
               </p>
               <div className={styles["ellipsis"]}>@ 93 L onwards</div>
+              <div className={styles["ellipsis"]}>Call: +91 99163 58180</div>
               <a className={styles["btn"]} href="javascript:void(0);">
                 Explore Now
               </a>

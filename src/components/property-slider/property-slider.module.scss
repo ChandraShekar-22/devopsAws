@@ -55,7 +55,7 @@
 .carousel-caption {
     width: 300px;
     height: 100%;
-    background: #394054;
+    background: #00977e;
     color: #fff;
     position: absolute;
     right: 0;
@@ -63,14 +63,15 @@
     padding: 15px 15px 15px 20px;
     text-align: left;
     text-shadow: none;
+    font-weight: 500;
 }
 
 .carousel-caption .offerbox {
     width: 100%;
     padding: 10px 0;
     margin: 0 0 20px;
-    border-top: 1px dashed #ddd;
-    border-bottom: 1px dashed #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 .carousel-caption p {
     font-size: 13px;
@@ -79,7 +80,12 @@
     cursor: pointer;
     margin-bottom: 20px;
 }
-
+.carousel-caption .ellipsis {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+}
 .btn{
   background: hsla(0,0%,100%,0);
   padding: 10px 12px;

@@ -1,7 +1,11 @@
 import styles from './master-plan.module.scss';
 import { Header } from '../header/header';
 
-export const MasterPlan = () => {
+export interface MasterPlanProps {
+  openModal: () => void;
+}
+
+export const MasterPlan = ({ openModal }: MasterPlanProps) => {
   return (
     <div id={styles['master-plan']}>
       <div className={`${styles['master-plan-outer']} ${styles['bgclolr']}`}>
@@ -17,7 +21,7 @@ export const MasterPlan = () => {
               }}></div>
             <div className={styles['e-model-wrp']}>
               <p className={styles['title']}>MASTER PLAN</p>
-              <button type='submit' className={styles['btn btn-exp btn-lg']} title='Master Plan - Unishire Belvedere Premia'>
+              <button type='submit' className={styles['btn btn-exp btn-lg']} title='Master Plan - Unishire Belvedere Premia' onClick={openModal}>
                 Explore Now
               </button>
             </div>

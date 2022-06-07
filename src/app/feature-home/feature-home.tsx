@@ -1,13 +1,6 @@
-import {
-  FeaturedProjectCard,
-  LocationBox,
-  BrowserCard,
-  PropertiesCard,
-  PropertySlider,
-} from "components";
-import React from "react";
-import logo from "libs/shared/assets/my_new_logo.jpg";
-import Grid from "@mui/material/Grid";
+import { FeaturedProjectCard, PropertiesCard, PropertySlider } from 'components';
+import React from 'react';
+import Grid from '@mui/material/Grid';
 
 export const FeatureHome = () => {
   const featuredProjectData = [
@@ -57,51 +50,59 @@ export const FeatureHome = () => {
             <FeaturedProjectCard {...props} />
           </Grid>
         ))}
-      </Grid>
-
-      <Grid
-        container
-        spacing={{ xs: 2, md: 5 }}
-        columns={{ xs: 2, sm: 12, md: 12 }}
-      >
-        <Grid item xs={2} sm={4} md={4}>
-          <PropertiesCard
-            imageSrc={logo}
-            title="Kolte Patil I TOWERS Exente"
-            plotName="3BHK, 4BHK, Villa"
-            price="94.00 L - 1.2 CR"
-            navigateTo="#"
-            plotPlace=""
-            onClick={() => {}}
-            tagName=""
-            builderName="Kolte Patil Developers Ltd"
-          />
-        </Grid>
-        <Grid item xs={2} sm={4} md={4}>
-          <PropertiesCard
-            imageSrc={logo}
-            title="Kolte Patil I TOWERS Exente"
-            plotName="3BHK, 4BHK, Villa"
-            price="94.00 L - 1.2 CR"
-            navigateTo="#"
-            plotPlace=""
-            onClick={() => {}}
-            tagName=""
-            builderName="Kolte Patil Developers Ltd"
-          />
-        </Grid>
-        <Grid item xs={2} sm={4} md={4}>
-          <PropertiesCard
-            imageSrc={logo}
-            title="Kolte Patil I TOWERS Exente"
-            plotName="3BHK, 4BHK, Villa"
-            price="94.00 L - 1.2 CR"
-            navigateTo="#"
-            plotPlace=""
-            onClick={() => {}}
-            tagName=""
-            builderName="Kolte Patil Developers Ltd"
-          />
+        <Grid
+          container
+          spacing={{ xs: 2, md: 3 }}
+          columns={{ xs: 2, sm: 12, md: 12 }}
+        >
+          <Grid item xs={2} sm={6} md={3}>
+            <PropertiesCard
+              title="Kolte Patil I TOWERS Exente"
+              plotName="3BHK, 4BHK, Villa"
+              price="94.00 L - 1.2 CR"
+              navigateTo="#"
+              plotPlace=""
+              onClick={() => {}}
+              tagName=""
+              builderName="Kolte Patil Developers Ltd"
+            />
+          </Grid>
+          <Grid item xs={2} sm={3} md={3}>
+            <PropertiesCard
+              title="Kolte Patil I TOWERS Exente"
+              plotName="3BHK, 4BHK, Villa"
+              price="94.00 L - 1.2 CR"
+              navigateTo="#"
+              plotPlace=""
+              onClick={() => {}}
+              tagName=""
+              builderName="Kolte Patil Developers Ltd"
+            />
+          </Grid>
+          <Grid item xs={2} sm={3} md={3}>
+            <PropertiesCard
+              title="Kolte Patil I TOWERS Exente"
+              plotName="3BHK, 4BHK, Villa"
+              price="94.00 L - 1.2 CR"
+              navigateTo="#"
+              plotPlace=""
+              onClick={() => {}}
+              tagName=""
+              builderName="Kolte Patil Developers Ltd"
+            />
+          </Grid>
+          <Grid item xs={2} sm={3} md={3}>
+            <PropertiesCard
+              title="Kolte Patil I TOWERS Exente"
+              plotName="3BHK, 4BHK, Villa"
+              price="94.00 L - 1.2 CR"
+              navigateTo="#"
+              plotPlace=""
+              onClick={() => {}}
+              tagName=""
+              builderName="Kolte Patil Developers Ltd"
+            />
+          </Grid>
         </Grid>
       </Grid>
     </div>
