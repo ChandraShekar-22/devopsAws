@@ -9,9 +9,11 @@ import { PlotHeader } from '../plot-header/plot-header';
 import { PlotGalleryModal } from '../plot-gallery-modal/plot-gallery-modal';
 import { Button, CallBackCard } from 'components';
 import { MasterPlan } from '../master-plan/master-plan';
+import { PlotDetailsProps } from 'app/feature-plot-details/models';
 
-export const PlotDetails = () => {
-  const [openModal, setOpenModel] = useState(false);
+export const PlotDetails = ({ media, unit, amenities, area, launched, possession, price, propertyStatus, rera, ...props }: PlotDetailsProps) => {
+  const [openModal, setOpenModel] = useState({ isOpen: false, activeTabName: '' });
+
   return (
     <Grid container spacing={2} style={{ paddingTop: '20px' }} justifyContent='center' alignContent='center'>
       <Grid item md={9}>
@@ -21,59 +23,46 @@ export const PlotDetails = () => {
             <Grid item xs={12} sm={5}>
               <PlotGallery
                 openModal={() => {
-                  setOpenModel(true);
+                  setOpenModel({ isOpen: true, activeTabName: 'gallery' });
                 }}
+                gallery={media.gallery.slice(0, 3)}
+                totalImages={media.gallery.length}
               />
             </Grid>
             <Grid item xs={12} sm={7} className={styles['bgColor']}>
               <PlotDetailsCard
-                areaInSqFt={'1200 - 2177 sq.ft.'}
-                areaInSqm={'111.48 - 202.25 sq.m'}
-                possession={'Dec-2025 '}
-                possessionTag={'Ongoing'}
-                priceRange={'43.15 L - 1.20 Cr'}
+                area={area}
+                areaInSqm={{ min: '111.48', max: '202.25' }}
+                possession={possession}
+                propertyStatus={propertyStatus}
+                price={price}
                 propertyType={'Plot'}
-                launchDate={'Dec-2020'}
+                launched={launched}
+                rera={rera}
               />
             </Grid>
           </Grid>
         </div>
         <UnitConfiguration
-          configuarations={[
-            {
-              unitType: '2 BHK Apartment',
-              availablity: 'YES',
-              buitUpAreaInSqft: '984 - 1252 sq.ft',
-              buitUpAreaInSqm: '91.42 - 116.31 sq.m',
-              price: '70.11 L - 89.20 L',
-            },
-            {
-              unitType: '2 BHK Apartment',
-              availablity: 'YES',
-              buitUpAreaInSqft: '984 - 1252 sq.ft',
-              buitUpAreaInSqm: '91.42 - 116.31 sq.m',
-              price: '70.11 L - 89.20 L',
-            },
-            {
-              unitType: '2 BHK Apartment',
-              availablity: 'YES',
-              buitUpAreaInSqft: '984 - 1252 sq.ft',
-              buitUpAreaInSqm: '91.42 - 116.31 sq.m',
-              price: '70.11 L - 89.20 L',
-            },
-          ]}
+          configuarations={unit}
+          openModal={() => {
+            setOpenModel({ isOpen: true, activeTabName: 'floorPlans' });
+          }}
         />
         <MasterPlan
           openModal={() => {
-            setOpenModel(true);
+            setOpenModel({ isOpen: true, activeTabName: 'masterPlans' });
           }}
+          imageSrc={media.masterPlans[0].path || ''}
         />
-        <PlotAmenities />
+        <PlotAmenities amenities={amenities} />
         <PlotGalleryModal
-          openModal={openModal}
+          openModal={openModal.isOpen}
           closeModal={() => {
-            setOpenModel(false);
+            setOpenModel({ isOpen: false, activeTabName: '' });
           }}
+          activeTabName={openModal.activeTabName}
+          slideImages={media}
         />
       </Grid>
       <Grid item className={styles['request-container']}>

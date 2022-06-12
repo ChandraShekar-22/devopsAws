@@ -7,9 +7,9 @@ export const Header = () => {
         <div className={styles["logo-container"]}>
           <img src={logo} alt="logo" />
           <div className={styles["cities"]}>
-            <a href="javascript:void(0)">Bangalore</a>{" "}
-            <a href="javascript:void(0)">Pune</a>{" "}
-            <a href="javascript:void(0)">Chennai</a>
+            <a href="#">Bangalore</a>{" "}
+            <a href="#">Pune</a>{" "}
+            <a href="#">Chennai</a>
           </div>
           <div className={styles["contact"]}>+91 7795058180</div>
         </div>

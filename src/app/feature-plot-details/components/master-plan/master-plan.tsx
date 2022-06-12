@@ -3,9 +3,10 @@ import { Header } from '../header/header';
 
 export interface MasterPlanProps {
   openModal: () => void;
+  imageSrc: string;
 }
 
-export const MasterPlan = ({ openModal }: MasterPlanProps) => {
+export const MasterPlan = ({ openModal, imageSrc }: MasterPlanProps) => {
   return (
     <div id={styles['master-plan']}>
       <div className={`${styles['master-plan-outer']} ${styles['bgclolr']}`}>
@@ -15,8 +16,7 @@ export const MasterPlan = ({ openModal }: MasterPlanProps) => {
             <div
               className={styles['e-model']}
               style={{
-                background:
-                  "linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://teja12.kuikr.com/is/a/c/655x525/public/plan-images/india/bangalore/Unishire%20Belvedere%20Premia/519c8de946015.gif')",
+                background: `linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${imageSrc})`,
                 height: '350px',
               }}></div>
             <div className={styles['e-model-wrp']}>
