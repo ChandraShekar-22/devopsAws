@@ -1,16 +1,18 @@
 import styles from './plot-details-card.module.scss';
+import { MaxMinProps } from 'app/feature-plot-details/models';
 
 export interface PlotDetailsCardProps {
-  areaInSqFt: string;
-  areaInSqm: string;
+  area: MaxMinProps;
+  areaInSqm: MaxMinProps;
   possession: string;
-  possessionTag: string;
-  priceRange: string;
+  propertyStatus: string;
+  price: MaxMinProps;
   propertyType: string;
-  launchDate: string;
+  launched: string;
+  rera: string;
 }
 
-export const PlotDetailsCard = ({ areaInSqFt, areaInSqm, possession, possessionTag, priceRange, propertyType, launchDate }: PlotDetailsCardProps) => {
+export const PlotDetailsCard = ({ areaInSqm, area, possession, propertyStatus, price, propertyType, launched, rera }: PlotDetailsCardProps) => {
   return (
     <div>
       <div className={styles['pro_dls_info']}>
@@ -18,19 +20,23 @@ export const PlotDetailsCard = ({ areaInSqFt, areaInSqm, possession, possessionT
           <li>
             <small>Area</small>
             <span>
-              {areaInSqFt}
-              <small className={styles['smtext']}>({areaInSqm})</small>
+              {area.max} - {area.min} sq.ft.
+              <small className={styles['smtext']}>
+                ({area.min} - {area.max} sq.m)
+              </small>
             </span>
           </li>
           <li>
             <small>Possession</small>
             <span>
-              {possession} ({possessionTag})
+              {possession} ({propertyStatus})
             </span>
           </li>
           <li>
             <small>Price Range</small>
-            <span>₹ {priceRange}</span>
+            <span>
+              ₹ {price.max} - {price.min}
+            </span>
           </li>
           <li>
             <small>Property Type</small>
@@ -38,13 +44,13 @@ export const PlotDetailsCard = ({ areaInSqFt, areaInSqm, possession, possessionT
           </li>
           <li>
             <small>Launched Date</small>
-            <span>{launchDate}</span>
+            <span>{launched}</span>
           </li>
         </ul>
         <div className={styles['clearfix']}></div>
         <div className={styles['colds']}>
           <div className={styles['rara_info']}>RERA ID </div>
-          <span className={styles['rera_dls']}>PRM/KA/RERA/1251/446/PR/210111/003772</span>
+          <span className={styles['rera_dls']}>{rera}</span>
         </div>
       </div>
     </div>
