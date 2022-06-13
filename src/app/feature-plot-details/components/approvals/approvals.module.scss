@@ -1,0 +1,72 @@
+.container {
+  > ul {
+    width: 100%;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #ffffff;
+    max-width: 90vw;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+  }
+  > ul::-webkit-scrollbar {
+    display: none;
+  }
+  > ul > li {
+    width: auto;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    min-width: 140px;
+    padding: 0;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  li.active {
+    border-bottom: 4px solid #fb676c;
+    color: #333;
+  }
+
+  > ul > li > span {
+    display: block;
+    width: 100%;
+    transition: all 0.1s ease;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Roboto-Regular, sans-serif;
+    text-transform: uppercase;
+    color: #666;
+    padding: 10px;
+  }
+}
+
+.check-list {
+  padding: 15px 0 10px;
+  i {
+    color: #16bec3;
+  }
+  span {
+    display: inline-block;
+    width: 100%;
+    color: #666;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
