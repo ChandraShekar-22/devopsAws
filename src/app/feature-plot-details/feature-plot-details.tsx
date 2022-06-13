@@ -15,6 +15,7 @@ export const FeaturePlotDetails = () => {
     price: data.property.price,
     rera: data.property.rera,
     area: data.property.area,
+    specifications: data.property.specifications,
   };
   return <PlotDetails {...plotDetailsProps} />;
 };
