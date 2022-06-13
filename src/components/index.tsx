@@ -9,3 +9,5 @@ export * from './call-back-card/call-back-card';
 export * from './text-input/text-input';
 export * from './modal/modal';
 export * from './property-slider/property-slider';
+export * from './heading/heading';
+export * from './footer/footer';

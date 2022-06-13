@@ -1,4 +1,9 @@
-import { FeaturedProjectCard, PropertiesCard, PropertySlider } from 'components';
+import {
+  FeaturedProjectCard,
+  PropertiesCard,
+  PropertySlider,
+  Heading,
+} from "components";
 import React from 'react';
 import Grid from '@mui/material/Grid';
 
@@ -38,16 +43,26 @@ export const FeatureHome = () => {
   ];
 
   return (
-    <div style={{ marginTop: '20px' }}>
-      <PropertySlider items={items} />
-      <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 2, sm: 12, md: 12 }}>
-        {featuredProjectData.map((props, index) => (
-          <Grid item xs={12} sm={4} md={4} key={index}>
-            <FeaturedProjectCard {...props} />
-          </Grid>
-        ))}
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 12, md: 12 }}>
-          <Grid item xs={2} sm={6} md={3}>
+    <>
+      <div style={{ marginTop: "20px" }}>
+        <PropertySlider items={items} />
+        <Heading text="Properties for you" />
+        <Grid
+          container
+          style={{ justifyContent: "space-between", backgroundColor: "#fff" }}
+        >
+          {featuredProjectData.map((props, index) => (
+            <Grid item key={index}>
+              <FeaturedProjectCard {...props} />
+            </Grid>
+          ))}
+        </Grid>
+        <Heading text="Recent properties" />
+        <Grid
+          container
+          style={{ justifyContent: "space-between", backgroundColor: "#fff" }}
+        >
+          <Grid item>
             <PropertiesCard
               title='Kolte Patil I TOWERS Exente'
               plotName='3BHK, 4BHK, Villa'
@@ -59,7 +74,7 @@ export const FeatureHome = () => {
               builderName='Kolte Patil Developers Ltd'
             />
           </Grid>
-          <Grid item xs={2} sm={3} md={3}>
+          <Grid item>
             <PropertiesCard
               title='Kolte Patil I TOWERS Exente'
               plotName='3BHK, 4BHK, Villa'
@@ -71,7 +86,7 @@ export const FeatureHome = () => {
               builderName='Kolte Patil Developers Ltd'
             />
           </Grid>
-          <Grid item xs={2} sm={3} md={3}>
+          <Grid item>
             <PropertiesCard
               title='Kolte Patil I TOWERS Exente'
               plotName='3BHK, 4BHK, Villa'
@@ -83,7 +98,7 @@ export const FeatureHome = () => {
               builderName='Kolte Patil Developers Ltd'
             />
           </Grid>
-          <Grid item xs={2} sm={3} md={3}>
+          <Grid item>
             <PropertiesCard
               title='Kolte Patil I TOWERS Exente'
               plotName='3BHK, 4BHK, Villa'
@@ -108,7 +123,7 @@ export const FeatureHome = () => {
             />
           </Grid>
         </Grid>
-      </Grid>
-    </div>
+      </div>
+    </>
   );
 };
