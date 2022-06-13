@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path='/' element={<AppLayout />}>
         <Route path='/' element={<PublicRoute title='Home' Component={HomePage} />} />
-        <Route path='/plot-details' element={<PublicRoute title='plot-details' Component={PlotDetailsPage} />} />
+        <Route path='/property/:location/:slug' element={<PublicRoute title='plot-details' Component={PlotDetailsPage} />} />
       </Route>
     </Routes>
   );

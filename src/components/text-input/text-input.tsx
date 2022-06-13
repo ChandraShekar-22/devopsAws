@@ -21,6 +21,7 @@ export const TextInput = ({ label, prefix, value, onChange, errorMessage, error,
       <label htmlFor='email' className={(value || prefix) && styles['filled']}>
         {label}
       </label>
+      {error && <span className={styles['error']}>{errorMessage}</span>}
     </div>
   );
 };
