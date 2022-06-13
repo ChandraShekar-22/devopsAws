@@ -42,4 +42,9 @@ export interface PlotDetailsProps {
   price: MaxMinProps;
   rera: string;
   area: MaxMinProps;
+  specifications: SpecificationsType[];
+}
+export interface SpecificationsType {
+  label: string;
+  data: string[];
 }

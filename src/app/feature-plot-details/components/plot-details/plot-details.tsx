@@ -10,8 +10,22 @@ import { PlotGalleryModal } from '../plot-gallery-modal/plot-gallery-modal';
 import { Button, CallBackCard } from 'components';
 import { MasterPlan } from '../master-plan/master-plan';
 import { PlotDetailsProps } from 'app/feature-plot-details/models';
+import { Specifications } from '../specifications/specifications';
+import { Approvals } from '../approvals/approvals';
 
-export const PlotDetails = ({ media, unit, amenities, area, launched, possession, price, propertyStatus, rera, ...props }: PlotDetailsProps) => {
+export const PlotDetails = ({
+  media,
+  unit,
+  amenities,
+  area,
+  launched,
+  possession,
+  price,
+  propertyStatus,
+  rera,
+  specifications,
+  ...props
+}: PlotDetailsProps) => {
   const [openModal, setOpenModel] = useState({ isOpen: false, activeTabName: '' });
 
   return (
@@ -56,6 +70,8 @@ export const PlotDetails = ({ media, unit, amenities, area, launched, possession
           imageSrc={media.masterPlans[0].path || ''}
         />
         <PlotAmenities amenities={amenities} />
+        <Approvals checkList={{ loan: ['HDFC Bank', 'ICICI Bank'], legal: ['BBMP'] }} />
+        <Specifications data={specifications} />
         <PlotGalleryModal
           openModal={openModal.isOpen}
           closeModal={() => {

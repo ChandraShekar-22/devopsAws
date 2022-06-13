@@ -65,10 +65,10 @@ export const PlotGalleryModal = ({ openModal, closeModal, slideImages, activeTab
   return (
     <Modal open={openModal} maxWidth={'xl'}>
       <div className={styles['modal-body']} ref={modalRef}>
-        <button type='button' className={styles['closegallery']} onClick={closeModal}>
-          <span aria-hidden='true'>×</span>
-        </button>
         <section>
+          <button type='button' className={styles['closegallery']} onClick={closeModal}>
+            <span aria-hidden='true'>×</span>
+          </button>
           <ul>
             {tabList.map((tab) => {
               return (

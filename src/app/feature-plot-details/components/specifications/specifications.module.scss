@@ -1,0 +1,30 @@
+.spec-deatils {
+  color: #666;
+  height: 100%;
+  transition: all 0.3s;
+  font-size: 14px;
+  line-height: 23px;
+}
+.spec-container {
+  max-height: 320px;
+  height: 100%;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+.spec-detail p {
+  color: #666;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.spec-deatils ul {
+  list-style: disc;
+  line-height: 18px;
+  padding-left: 18px;
+}
+
+.spec-deatils ul > li {
+  margin-bottom: 10px;
+}
