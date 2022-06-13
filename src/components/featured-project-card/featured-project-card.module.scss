@@ -1,16 +1,16 @@
 .container {
   min-height: 316px;
-  border: 1px solid #eee;
+  // border: 1px solid #eee;
   display: block;
   cursor: pointer;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  // box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   max-width: 358px;
   background-color: #fff;
 }
 .container:hover {
-  border: 1px solid #ddd;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  // border: 1px solid #ddd;
+  // box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   img {
     transform: translateY(-50%) scale(1.04);
