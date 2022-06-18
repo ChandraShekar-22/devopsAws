@@ -1,178 +1,193 @@
 {
-    "property": {
-      "slug": "keya-life-by-the-lake-bangalore",
-      "id": "1",
-      "name": "Keya Life By The Lake",
-      "location": {
-        "place": "Jakkur Lake Road, Nehrunagar",
-        "area": "Jakkur",
-        "city": "Bangalore",
-        "state": "Karnataka",
-        "pincode": 560097,
-        "advantage": "North Bangalore is the most promising location and is well connected to the entire city. The CBD/Airport is a 20 minute drive from the project location. It’s a 6-7 minute drive from Hebbal on the airport road."
-      },
-      "rera":"PRM/KA/RERA/1251/309/PR/210119/003787",
-      "loan":["HDFC Bank","ICICI Bank"],
-      "legal":["BBMP"],
-      "aboutTheProperty":{"summary":"Keya Life by the Lake is a boutique lifestyle development with 50 handcrafted homes (10 blocks of G+3 construction with basement car park). These residences are a  combination of large 4/5 BHK duplexes on a land parcel of 2.6 Acres at Jakkur, Bangalore. ", "more":[
-          {"label":"", "elType":"list", "data":[
-              "Each home would have 3 dedicated covered car parking slots.",
-              "Available Unit Type: Duplex Apartment with Garden  + Penthouse with Private Terrace Garden",
-              "All duplexes come with the private ground floor garden or terrace garden.  All-in cost ranges between Rs. 4.25 - 5.50 cr + Registration"
-          ]},
-          {
-            "label": "The making of “Life by the Lake”",
-            "elType": "label",
-            "data": []
-          },
-          { 
-            "label": "GREEN INITIATIVES",
-            "elType": "text",
-            "data": ["Your homes come with fully loaded green/environment friendly initiatives. Few of them are listed below."]
-          },
-          {
-            "label": "SUNLIGHT/VENTILATION/PRIVACY",
-            "elType": "text",
-            "data": [
-              "Your home has been built on east/west orientation to make sure that you get direct sunlight half of the day and day light for the rest of the day. You would have no breach of privacy from any part of your home at our project. We have provided a full length Aluminium French window with maximum opening to ensure that you enjoy the fresh air and light in your home. The glasses of the windows are from Saint Gobain and do have high grade energy/heat efficiency."
-            ]
-          }
-      ]},
-      "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-      "seo": {
+  "property": {
+    "bangalore": [
+      {
         "slug": "keya-life-by-the-lake-bangalore",
-        "keyword": "Keya Life By The Lake in Jakkur, Bangalore | Find Price, Gallery, Plans, Amenities on Getmyprop.com",
-        "descriptoin": "7 Jun 2022 Buy 5,4,4+ BHK Villament,Villa,PentHouse,Apartment ✓ 3.85 Crores - 5.58 Crores ✓ Ready to Move-in | Keya Life By The Lake by Keya Homes is located in Jakkur, Bangalore and boasts of amenities like Badminton Court,Basket Ball Court,Carrom Board... ✓ 55 properties for Sale"
-      },
-      "possession":"Mar-2022 ",
-      "launched":"Apr-2016",
-      "propertyStatus":"Ready-to-move",
-      "builder": { "name": "Keya Homes", "about": "Since inception in 2013, our philosophy has always been to create homes that take mankind to the future by bringing nature and technology together. This promise of sustainable living has been aptly complemented by smart designs and signature lifestyle choices. By nestling your every step with lush greenery and fresh air, we've restored the purity of nature. And by introducing your distinct tastes to contemporary amenities, we've created the future for you. But we haven't stopped there we've lent thoughtfulness to our creativity with a transparent, hands-on approach that combines the best of planning and execution to deliver uninhibited happiness." },
-      "price": { "min": "3.85 Cr", "max": "5.58 Cr" },
-      "unit": [
-        {
-          "type": "4 BHK Apartment",
-          "available": true,
-          "builtUpArea": { "min": "4250", "max": "5100" },
-          "carpetArea": { "min": "NA", "max": "NA" },
-          "price": { "min": "4.17 Cr", "max": "5.58 Cr" },
-          "pricePerSQFT": "NA"
+        "id": "1",
+        "name": "Keya Life By The Lake",
+        "location": {
+          "place": "Jakkur Lake Road, Nehrunagar",
+          "area": "Jakkur",
+          "city": "Bangalore",
+          "state": "Karnataka",
+          "pincode": 560097,
+          "advantage": "North Bangalore is the most promising location and is well connected to the entire city. The CBD/Airport is a 20 minute drive from the project location. It’s a 6-7 minute drive from Hebbal on the airport road."
         },
-        {
-          "type": "5 BHK Apartment",
-          "available": true,
-          "builtUpArea": { "min": "4520", "max":"5500" },
-          "carpetArea": { "min": "NA", "max": "NA" },
-          "price": { "min": "4.42 Cr", "max": "5.35 Cr" },
-          "pricePerSQFT": "NA"
-        }
-      ],
-      "area": { "min": "3880", "max": "5500 " },
-      "media": {
-        "slider": {
-          "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-          "path": "https://teja10.kuikr.com/restatic/1650884168.jpg"
+        "rera": "PRM/KA/RERA/1251/309/PR/210119/003787",
+        "loan": ["HDFC Bank", "ICICI Bank"],
+        "legal": ["BBMP"],
+        "aboutTheProperty": {
+          "summary": "Keya Life by the Lake is a boutique lifestyle development with 50 handcrafted homes (10 blocks of G+3 construction with basement car park). These residences are a  combination of large 4/5 BHK duplexes on a land parcel of 2.6 Acres at Jakkur, Bangalore. ",
+          "more": [
+            {
+              "label": "",
+              "elType": "list",
+              "data": [
+                "Each home would have 3 dedicated covered car parking slots.",
+                "Available Unit Type: Duplex Apartment with Garden  + Penthouse with Private Terrace Garden",
+                "All duplexes come with the private ground floor garden or terrace garden.  All-in cost ranges between Rs. 4.25 - 5.50 cr + Registration"
+              ]
+            },
+            {
+              "label": "The making of “Life by the Lake”",
+              "elType": "label",
+              "data": []
+            },
+            {
+              "label": "GREEN INITIATIVES",
+              "elType": "text",
+              "data": ["Your homes come with fully loaded green/environment friendly initiatives. Few of them are listed below."]
+            },
+            {
+              "label": "SUNLIGHT/VENTILATION/PRIVACY",
+              "elType": "text",
+              "data": [
+                "Your home has been built on east/west orientation to make sure that you get direct sunlight half of the day and day light for the rest of the day. You would have no breach of privacy from any part of your home at our project. We have provided a full length Aluminium French window with maximum opening to ensure that you enjoy the fresh air and light in your home. The glasses of the windows are from Saint Gobain and do have high grade energy/heat efficiency."
+              ]
+            }
+          ]
         },
-        "gallery": [
+        "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+        "seo": {
+          "slug": "keya-life-by-the-lake-bangalore",
+          "keyword": "Keya Life By The Lake in Jakkur, Bangalore | Find Price, Gallery, Plans, Amenities on Getmyprop.com",
+          "descriptoin": "7 Jun 2022 Buy 5,4,4+ BHK Villament,Villa,PentHouse,Apartment ✓ 3.85 Crores - 5.58 Crores ✓ Ready to Move-in | Keya Life By The Lake by Keya Homes is located in Jakkur, Bangalore and boasts of amenities like Badminton Court,Basket Ball Court,Carrom Board... ✓ 55 properties for Sale"
+        },
+        "possession": "Mar-2022 ",
+        "launched": "Apr-2016",
+        "propertyStatus": "Ready-to-move",
+        "builder": {
+          "name": "Keya Homes",
+          "about": "Since inception in 2013, our philosophy has always been to create homes that take mankind to the future by bringing nature and technology together. This promise of sustainable living has been aptly complemented by smart designs and signature lifestyle choices. By nestling your every step with lush greenery and fresh air, we've restored the purity of nature. And by introducing your distinct tastes to contemporary amenities, we've created the future for you. But we haven't stopped there we've lent thoughtfulness to our creativity with a transparent, hands-on approach that combines the best of planning and execution to deliver uninhibited happiness."
+        },
+        "price": { "min": "3.85 Cr", "max": "5.58 Cr" },
+        "unit": [
           {
-            "id": 1,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": "https://teja13.kuikr.com/is/a/f/800x600/gallery_images/original/cf622ee7d8bd204.gif"
+            "type": "4 BHK Apartment",
+            "available": true,
+            "builtUpArea": { "min": "4250", "max": "5100" },
+            "carpetArea": { "min": "NA", "max": "NA" },
+            "price": { "min": "4.17 Cr", "max": "5.58 Cr" },
+            "pricePerSQFT": "NA"
           },
           {
-            "id": 2,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": "https://teja13.kuikr.com/is/a/f/800x600/gallery_images/original/cf622ee7d8be7b0.gif"
-          },
-          {
-            "id": 3,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": "https://teja13.kuikr.com/is/a/f/800x600/gallery_images/original/cf622ee7d8be7b0.gif"
+            "type": "5 BHK Apartment",
+            "available": true,
+            "builtUpArea": { "min": "4520", "max": "5500" },
+            "carpetArea": { "min": "NA", "max": "NA" },
+            "price": { "min": "4.42 Cr", "max": "5.35 Cr" },
+            "pricePerSQFT": "NA"
           }
         ],
-        "masterPlans": [
-          {
-            "id": 1,
+        "area": { "min": "3880", "max": "5500 " },
+        "media": {
+          "slider": {
             "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": "https://teja14.kuikr.com/is/a/f/800x600/public/plan-images/India/Bangalore/KeyaLifeByTheLake/cf612df0d136d9c.gif"
+            "path": "https://teja10.kuikr.com/restatic/1650884168.jpg"
           },
-          {
-            "id": 2,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": ""
-          },
-          {
-            "id": 3,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": ""
-          }
-        ],
-        "floorPlans": [
-          {
-            "id": 1,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": "https://teja14.kuikr.com/is/a/f/800x600/public/plan-images/India/Bangalore/KeyaLifeByTheLake/cf6135d736a2a08.gif"
-          },
-          {
-            "id": 2,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": "https://teja14.kuikr.com/is/a/f/800x600/public/plan-images/India/Bangalore/KeyaLifeByTheLake/cf6135d77870eb5.gif"
-          },
-          {
-            "id": 3,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": "https://teja13.kuikr.com/is/a/f/800x600/public/plan-images/India/Bangalore/KeyaLifeByTheLake/cf6135d76597db9.gif"
-          },
-          {
-            "id": 4,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": "https://teja14.kuikr.com/is/a/f/800x600/public/plan-images/India/Bangalore/KeyaLifeByTheLake/cf6135d75f42a76.gif"
-          }
-        ],
-        "routeMaps": [
-          {
-            "id": 1,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": "https://teja14.kuikr.com/is/a/f/800x600/public/apt_map_images/Bangalore/KeyaLifeByTheLake/cf612df07f8fc85.jpg"
-          },
-          {
-            "id": 2,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": ""
-          },
-          {
-            "id": 3,
-            "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
-            "path": ""
-          }
-        ]
-      },
-      "amenities": [
-        {
-          "label": "Society",
-          "data": ["Badminton Court", "Basket Ball Court", "Carrom Board"]
+          "gallery": [
+            {
+              "id": 1,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": "https://teja13.kuikr.com/is/a/f/800x600/gallery_images/original/cf622ee7d8bd204.gif"
+            },
+            {
+              "id": 2,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": "https://teja13.kuikr.com/is/a/f/800x600/gallery_images/original/cf622ee7d8be7b0.gif"
+            },
+            {
+              "id": 3,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": "https://teja13.kuikr.com/is/a/f/800x600/gallery_images/original/cf622ee7d8be7b0.gif"
+            }
+          ],
+          "masterPlans": [
+            {
+              "id": 1,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": "https://teja14.kuikr.com/is/a/f/800x600/public/plan-images/India/Bangalore/KeyaLifeByTheLake/cf612df0d136d9c.gif"
+            },
+            {
+              "id": 2,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": ""
+            },
+            {
+              "id": 3,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": ""
+            }
+          ],
+          "floorPlans": [
+            {
+              "id": 1,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": "https://teja14.kuikr.com/is/a/f/800x600/public/plan-images/India/Bangalore/KeyaLifeByTheLake/cf6135d736a2a08.gif"
+            },
+            {
+              "id": 2,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": "https://teja14.kuikr.com/is/a/f/800x600/public/plan-images/India/Bangalore/KeyaLifeByTheLake/cf6135d77870eb5.gif"
+            },
+            {
+              "id": 3,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": "https://teja13.kuikr.com/is/a/f/800x600/public/plan-images/India/Bangalore/KeyaLifeByTheLake/cf6135d76597db9.gif"
+            },
+            {
+              "id": 4,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": "https://teja14.kuikr.com/is/a/f/800x600/public/plan-images/India/Bangalore/KeyaLifeByTheLake/cf6135d75f42a76.gif"
+            }
+          ],
+          "routeMaps": [
+            {
+              "id": 1,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": "https://teja14.kuikr.com/is/a/f/800x600/public/apt_map_images/Bangalore/KeyaLifeByTheLake/cf612df07f8fc85.jpg"
+            },
+            {
+              "id": 2,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": ""
+            },
+            {
+              "id": 3,
+              "caption": "Brigade Northridge Neo, is a sprawling luxury enclave of magnificent Apartment",
+              "path": ""
+            }
+          ]
         },
-        {
-          "label": "Indoor",
-          "data": ["Badminton Court", "Basket Ball Court", "Carrom Board"]
-        }
-      ],
-      "specifications": [
-        {
-          "label": "GENERAL",
-          "data": [
-              "Conventional RCC framed structure", 
-              "External and Internal Walls –Block Masonry of Lightweight AAC Block & RCC Wall as per design", 
+        "amenities": [
+          {
+            "label": "Society",
+            "data": ["Badminton Court", "Basket Ball Court", "Carrom Board"]
+          },
+          {
+            "label": "Indoor",
+            "data": ["Badminton Court", "Basket Ball Court", "Carrom Board"]
+          }
+        ],
+        "specifications": [
+          {
+            "label": "GENERAL",
+            "data": [
+              "Conventional RCC framed structure",
+              "External and Internal Walls Block Masonry of Lightweight AAC Block & RCC Wall as per design",
               "Granite - staircase treads"
             ]
-        },
-        {
-          "label": "RESIDENTIAL UNITS",
-          "data": [
-              "Interior: Royale Emulsion for internal walls and ceiling.", 
-              "Exterior: Water resistant texture paint", 
-              "Flooring: Living / Dining / Other bedrooms–Italian marble laid with paper joints"]
-        }
-      ]
-    }
+          },
+          {
+            "label": "RESIDENTIAL UNITS",
+            "data": [
+              "Interior: Royale Emulsion for internal walls and ceiling.",
+              "Exterior: Water resistant texture paint",
+              "Flooring: Living / Dining / Other bedrooms–Italian marble laid with paper joints"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
