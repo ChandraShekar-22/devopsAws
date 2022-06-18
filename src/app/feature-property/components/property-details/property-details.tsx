@@ -7,7 +7,7 @@ import { Grid } from '@mui/material';
 import { PlotAmenities } from '../plot-amenities/plot-amenities';
 import { PlotHeader } from '../plot-header/plot-header';
 import { PlotGalleryModal } from '../plot-gallery-modal/plot-gallery-modal';
-import { Button, CallBackCard } from 'components';
+import { Button, CallBackCard, Modal } from 'components';
 import { MasterPlan } from '../master-plan/master-plan';
 import { PlotDetailsProps } from 'app/feature-property/models';
 import { Specifications } from '../specifications/specifications';
@@ -32,7 +32,7 @@ export const PropertyDetails = ({
   ...props
 }: PlotDetailsProps) => {
   const [openModal, setOpenModel] = useState({ isOpen: false, activeTabName: '' });
-
+  const [contactModal, setContactModal] = useState(false);
   return (
     <Grid container spacing={2} style={{ paddingTop: '20px' }} justifyContent='center' alignContent='center'>
       <Grid item md={9}>
@@ -87,12 +87,23 @@ export const PropertyDetails = ({
         />
       </Grid>
       <Grid item className={styles['request-container']}>
-        <section>
-          <CallBackCard />
-        </section>
+        <CallBackCard />
       </Grid>
       <section className={styles['request-button']}>
-        <Button onClick={() => {}} fullWidth buttonType='primary'>
+        <Modal
+          open={contactModal}
+          onClose={() => {
+            setContactModal(false);
+          }}
+          fullWidth={false}>
+          <CallBackCard />
+        </Modal>
+        <Button
+          onClick={() => {
+            setContactModal(true);
+          }}
+          fullWidth
+          buttonType='primary'>
           Contact Us
         </Button>
       </section>

@@ -55,11 +55,8 @@
 .check-list {
   padding: 15px 0 10px;
   margin-bottom: 15px;
-  i {
-    color: #16bec3;
-  }
-  span {
-    display: inline-block;
+
+  >span {
     width: 100%;
     color: #666;
     text-align: left;
@@ -69,5 +66,10 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: flex;
+    > i {
+      color: #16bec3;
+      margin-right: 5px;
+    }
   }
 }

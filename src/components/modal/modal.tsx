@@ -6,7 +6,7 @@ export interface ModalProps {
   onClose?: () => void;
   children?: React.ReactNode;
   fullWidth?: boolean;
-  maxWidth: DialogProps['maxWidth'];
+  maxWidth?: DialogProps['maxWidth'];
 }
 
 export const Modal: React.FC<ModalProps> = ({ fullScreen = false, open, onClose, fullWidth = true, maxWidth = 'md', ...props }) => {
