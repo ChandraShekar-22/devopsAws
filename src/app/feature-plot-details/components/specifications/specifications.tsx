@@ -7,7 +7,7 @@ export interface SpecificationsProps {
 
 export const Specifications = ({ data }: SpecificationsProps) => {
   return (
-    <div>
+    <>
       <Header title='Specifications' />
       <section className={styles['spec-container']}>
         {data.map((specification) => {
@@ -25,6 +25,6 @@ export const Specifications = ({ data }: SpecificationsProps) => {
           );
         })}
       </section>
-    </div>
+    </>
   );
 };

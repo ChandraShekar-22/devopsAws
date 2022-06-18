@@ -20,7 +20,7 @@ export const Approvals = ({ checkList, ...props }: ApprovalsProps) => {
     setActiveCheckList(newCheckList);
   }, [checkList, activeTab]);
   return (
-    <div>
+    <>
       <Header title='Home Loans & Legal Approvals' />
       <section className={styles['container']}>
         <ul>
@@ -55,6 +55,6 @@ export const Approvals = ({ checkList, ...props }: ApprovalsProps) => {
           })}
         </Grid>
       </section>
-    </div>
+    </>
   );
 };

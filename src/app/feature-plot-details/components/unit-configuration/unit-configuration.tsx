@@ -26,7 +26,7 @@ export const UnitConfiguration: React.FC<UnitConfigurationProps> = ({ configuara
                 <div className={styles['col']}>
                   <span>{configure.type}</span>
                   <small>
-                    Availability*: <b>{configure.available ? 'Yes' : 'No'}</b>
+                    Availability*: <b>{configure.available ? 'Yes' : 'Sold Out'}</b>
                   </small>
                 </div>
                 <div className={styles['col']}>
