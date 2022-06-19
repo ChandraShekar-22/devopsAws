@@ -26,7 +26,6 @@ export const FeatureProperty = () => {
       navigate('/');
     }
   }, [error, navigate]);
-  console.log(error === PropertyErrorType.PROPERTY_NOT_FOUND, error);
   if (property) {
     const plotDetailsProps: PlotDetailsProps = {
       media: property.media,
