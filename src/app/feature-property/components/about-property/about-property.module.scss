@@ -1,0 +1,36 @@
+.summary-style {
+  color: #666;
+  transition: all 0.3s;
+  font-size: 14px;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+.container {
+  margin-bottom: 30px;
+}
+
+.list-container {
+  font-size: 14px;
+  line-height: 23px;
+  > div {
+    margin: 10px 0;
+  }
+  ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 18px;
+    margin-bottom: 10px;
+  }
+  li,
+  span {
+    color: #666;
+  }
+  p,
+  span::first-letter {
+    color: #666;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}

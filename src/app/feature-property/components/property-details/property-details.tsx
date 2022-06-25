@@ -12,6 +12,8 @@ import { MasterPlan } from '../master-plan/master-plan';
 import { PlotDetailsProps } from 'app/feature-property/models';
 import { Specifications } from '../specifications/specifications';
 import { Approvals } from '../approvals/approvals';
+import { BuilderDetails } from '../builder-details/builder-details';
+import { AboutProperty } from '../about-property/about-property';
 
 export const PropertyDetails = ({
   media,
@@ -29,6 +31,7 @@ export const PropertyDetails = ({
   name,
   location,
   builder,
+  aboutTheProperty,
   ...props
 }: PlotDetailsProps) => {
   const [openModal, setOpenModel] = useState({ isOpen: false, activeTabName: '' });
@@ -75,7 +78,9 @@ export const PropertyDetails = ({
           imageSrc={media.masterPlans[0].path || ''}
         />
         <PlotAmenities amenities={amenities} />
+        <AboutProperty more={aboutTheProperty.more} summary={aboutTheProperty.summary} />
         <Approvals checkList={{ loan, legal }} />
+        <BuilderDetails name={builder.name} about={builder.about} />
         <Specifications data={specifications} />
         <PlotGalleryModal
           openModal={openModal.isOpen}

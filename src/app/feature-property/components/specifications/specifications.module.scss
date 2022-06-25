@@ -1,16 +1,18 @@
 .spec-deatils {
   color: #666;
   height: 100%;
-  transition: all 0.3s;
   font-size: 14px;
   line-height: 23px;
 }
 .spec-container {
   max-height: 320px;
-  height: 100%;
   margin-top: 12px;
   overflow: hidden;
   margin-bottom: 15px;
+}
+.spec-container[data-expand='true'] {
+  max-height: 100%;
+  overflow: auto;
 }
 
 .spec-detail p {
@@ -28,4 +30,14 @@
 
 .spec-deatils ul > li {
   margin-bottom: 10px;
+}
+
+.view-more {
+  color: #f79100;
+  display: flex;
+  justify-content: flex-end;
+  > p {
+    padding: 10px;
+    cursor: pointer;
+  }
 }
