@@ -1,129 +1,41 @@
-import {
-  FeaturedProjectCard,
-  PropertiesCard,
-  PropertySlider,
-  Heading,
-} from "components";
-import React from 'react';
-import Grid from '@mui/material/Grid';
-
+import { useState } from 'react';
+import styles from './home.module.scss';
 export const FeatureHome = () => {
-  const featuredProjectData = [
-    {
-      price: '94.00 L - 1.2 CR',
-      title: 'Kolte Patil I TOWERS Exente',
-      address: 'Kolte Patil Developers Ltd in Electronic City Phase I',
-      flats: '2, 2.5, 3, 4 BHK',
-      developerName: 'Kolte Patil Developers Ltd',
-    },
-    {
-      price: '94.00 L - 1.2 CR',
-      title: 'Kolte Patil I TOWERS Exente',
-      address: 'Kolte Patil Developers Ltd in Electronic City Phase I',
-      flats: '2, 2.5, 3, 4 BHK',
-      developerName: 'Kolte Patil Developers Ltd',
-    },
-    {
-      price: '94.00 L - 1.2 CR',
-      title: 'Kolte Patil I TOWERS Exente',
-      address: 'Kolte Patil Developers Ltd in Electronic City Phase I',
-      flats: '2, 2.5, 3, 4 BHK',
-      developerName: 'Kolte Patil Developers Ltd',
-    },
-  ];
-  const items = [
-    {
-      name: 'Random Name #1',
-      description: 'Probably the most random thing you have ever seen!',
-    },
-    {
-      name: 'Random Name #2',
-      description: 'Hello World!',
-    },
-  ];
-
+  const [files, setFiles] = useState<File[]>([]);
+  const onDelete = (index: number) => {
+    setFiles((prev) => {
+      const newFiles = [...[...prev].slice(0, index), ...[...prev].slice(index + 1)];
+      return newFiles;
+    });
+  };
   return (
-    <>
-      <div style={{ marginTop: "20px" }}>
-        <PropertySlider items={items} />
-        <Heading text="Properties for you" />
-        <Grid
-          container
-          style={{ justifyContent: "space-between", backgroundColor: "#fff" }}
-        >
-          {featuredProjectData.map((props, index) => (
-            <Grid item key={index}>
-              <FeaturedProjectCard {...props} />
-            </Grid>
-          ))}
-        </Grid>
-        <Heading text="Recent properties" />
-        <Grid
-          container
-          style={{ justifyContent: "space-between", backgroundColor: "#fff" }}
-        >
-          <Grid item>
-            <PropertiesCard
-              title='Kolte Patil I TOWERS Exente'
-              plotName='3BHK, 4BHK, Villa'
-              price='94.00 L - 1.2 CR'
-              navigateTo='#'
-              plotPlace=''
-              onClick={() => {}}
-              tagName=''
-              builderName='Kolte Patil Developers Ltd'
-            />
-          </Grid>
-          <Grid item>
-            <PropertiesCard
-              title='Kolte Patil I TOWERS Exente'
-              plotName='3BHK, 4BHK, Villa'
-              price='94.00 L - 1.2 CR'
-              navigateTo='#'
-              plotPlace=''
-              onClick={() => {}}
-              tagName=''
-              builderName='Kolte Patil Developers Ltd'
-            />
-          </Grid>
-          <Grid item>
-            <PropertiesCard
-              title='Kolte Patil I TOWERS Exente'
-              plotName='3BHK, 4BHK, Villa'
-              price='94.00 L - 1.2 CR'
-              navigateTo='#'
-              plotPlace=''
-              onClick={() => {}}
-              tagName=''
-              builderName='Kolte Patil Developers Ltd'
-            />
-          </Grid>
-          <Grid item>
-            <PropertiesCard
-              title='Kolte Patil I TOWERS Exente'
-              plotName='3BHK, 4BHK, Villa'
-              price='94.00 L - 1.2 CR'
-              navigateTo='#'
-              plotPlace=''
-              onClick={() => {}}
-              tagName=''
-              builderName='Kolte Patil Developers Ltd'
-            />
-          </Grid>
-          <Grid item xs={2} sm={3} md={3}>
-            <PropertiesCard
-              title='Kolte Patil I TOWERS Exente'
-              plotName='3BHK, 4BHK, Villa'
-              price='94.00 L - 1.2 CR'
-              navigateTo='#'
-              plotPlace=''
-              onClick={() => {}}
-              tagName=''
-              builderName='Kolte Patil Developers Ltd'
-            />
-          </Grid>
-        </Grid>
+    <div className={styles['grid-layout']}>
+      {files.map((file, index) => {
+        const image = URL.createObjectURL(file);
+        return (
+          <section className={styles['image-container']}>
+            <img src={image} alt='kite-1' key={image} />
+            <i className='material-icons' onClick={() => onDelete(index)}>
+              delete
+            </i>
+          </section>
+        );
+      })}
+      <div className={styles['file-area']}>
+        <input
+          type='file'
+          value={''}
+          onChange={(e) => {
+            if (e.target?.files?.[0]) {
+              const file = e.target.files[0];
+              setFiles((prev) => [...prev, file]);
+            }
+          }}
+        />
+        <section>
+          <i className='material-icons'>add</i>
+        </section>
       </div>
-    </>
+    </div>
   );
 };
